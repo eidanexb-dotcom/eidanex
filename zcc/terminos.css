@@ -1,0 +1,163 @@
+/* Terminos — hoja independiente con el estilo del Index */
+
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --cero: 0;
+    --menos-1: -1;
+    --uno-px: 1px;
+    --diezpx: 10px;
+    --veinte-px: 20px;
+    --cien: 100px;
+    --cuatrocientospx: 400px;
+    --nose: none;
+    --centrado: center;
+    --normal: normal;
+    --absoluto: absolute;
+    --cien-porsiento: 100%;
+    --cero-punto-veiticinco: 0.25;
+    --cursiva: "Petit Formal Script", cursive;
+    --fondo: url(/img/18fa54afade665279473c95496ac663b.gif);
+    --Multiversal: height 1.3s ease, 0.3s ease all, opacity 0.3s ease, filter 0.3s ease, background 2.0s ease, border 0.3s ease, border-radius 1.3s ease;
+}
+
+* {
+    margin: var(--cero);
+    padding: var(--cero);
+    text-decoration: var(--nose);
+    color: var(--blanco);
+    transition: var(--Multiversal);
+}
+
+html {
+    height: var(--uno-px);
+    filter: grayscale(100%);
+    transition: filter 2.0s;
+
+    &:hover {
+        filter: var(--nose);
+    }
+}
+
+body {
+    background-color: var(--negro);
+    background-size: var(--cien-porsiento);
+    font-family: var(--cursiva);
+    font-size: var(--veinte-px);
+    text-align: var(--centrado);
+
+    &::before {
+        content: "";
+        position: var(--absoluto);
+        inset: var(--cero);
+        background: var(--fondo) no-repeat;
+        background-size: var(--cien-porsiento);
+        opacity: var(--cero-punto-veiticinco);
+        z-index: var(--menos-1);
+    }
+}
+
+
+.encavesado {
+    display: flex;
+    font-family: "Miss Fajardose", cursive;
+    text-align: var(--centrado);
+    font-weight: 400;
+    font-style: var(--normal);
+    font-size: 90px;
+    background-color: #0a0e1b;
+    padding: var(--veinte-px);
+    user-select: none;
+    -webkit-user-drag: none;
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.titulo-de {
+    margin: var(--diezpx) var(--cien);
+    text-align: var(--centrado);
+    font-family: "Miss Fajardose", cursive;
+    font-weight: 400;
+    font-style: var(--normal);
+    font-size: 10px;
+}
+
+.terminos {
+    margin: var(--diezpx) var(--cien);
+    display: flex;
+    line-height: var(--veinte-px);
+}
+
+.condisiones {
+    margin: var(--diezpx) var(--cien);
+    text-align: var(--centrado);
+    font-family: "Miss Fajardose", cursive;
+    font-style: var(--normal);
+    font-weight: 400;
+}
+
+.terminos::before {
+    transition: background 2.0s;
+    content: "";
+    position: var(--absoluto);
+    animation: das 0.001s none infinite;
+    top: 1005px;
+    left: 140px;
+    width: 341px;
+    height: 341px;
+    background: url(/img/dasda.png) no-repeat;
+    background-size: cover;
+    border-radius: var(--veinte-px);
+    opacity: 1;
+    z-index: var(--menos-1);
+}
+
+.condisiones::before {
+    transition: background 2.0s;
+    content: "";
+    position: var(--absoluto);
+    animation: da 100.0s none infinite;
+    background: url(/img/cerebrin.jpg) no-repeat;
+    top: 1155px;
+    left: 700px;
+    width: 340px;
+    height: 341px;
+    background-size: cover;
+    border-radius: var(--veinte-px);
+    opacity: 0.5;
+    z-index: -2;
+}
+
+@keyframes dasa {
+    25% {
+        background-position: 100px 305px;
+        z-index: 2;
+    }
+    50% {
+        background-position: 700px 705px;
+    }
+    75% {
+        background-position: 700px 15px;
+    }
+}
+
+@keyframes da {
+    50% {
+        top: 5400px;
+        left: 700px;
+    }
+}
+
+@keyframes das {
+    10% { top: 1005px; left: 1400px; }
+    20% { top: 2005px; left: 140px; }
+    30% { top: 2005px; left: 1400px; }
+    40% { top: 3005px; left: 140px; }
+    50% { top: 3005px; left: 1400px; }
+    60% { top: 4005px; left: 140px; }
+    70% { top: 4005px; left: 1400px; }
+    80% { top: 5005px; left: 140px; }
+    90% { top: 5005px; left: 1400px; }
+}

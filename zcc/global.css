@@ -1,0 +1,36 @@
+:root {
+    --absoluto: absolute;
+    --quinsepx: 15px;
+    --cuatrocientospx: 550px;
+    --venticincopx: 25px;
+    --veintepx: 20px;
+    --negro: #0a0e1b;
+    --nose: none;
+    --diezpx: 10px;
+    --cincuentapx: 50px;
+    --CDpx: 10px 50px;
+    --blanco: #ffffff;
+}
+
+
+
+.navegador {
+    position: var(--absoluto);
+    top: 0px;
+    right: var(--cuatrocientospx);
+    font-size: var(--venticincopx);
+
+    button {
+        border-radius: var(--veintepx);
+        background: var(--negro);
+        outline: var(--nose);
+        border: var(--nose);
+        padding: var(--CDpx);
+        margin: var(--veintepx);
+
+        a {
+            color: var(--blanco);
+            text-decoration: var(--nose);
+        }
+    }
+}

@@ -1,0 +1,90 @@
+/* Lista — hoja independiente con el estilo del Index */
+
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --cero: 0;
+    --menos-1: -1;
+    --uno-px: 1px;
+    --diezpx: 10px;
+    --veinte-px: 20px;
+    --cien: 100px;
+    --cuatrocientospx: 400px;
+    --nose: none;
+    --centrado: center;
+    --absoluto: absolute;
+    --cien-porsiento: 100%;
+    --cero-punto-veiticinco: 0.25;
+    --cursiva: "Petit Formal Script", cursive;
+    --fondo: url(/img/18fa54afade665279473c95496ac663b.gif);
+    --Multiversal: height 1.3s ease, 0.3s ease all, opacity 0.3s ease, filter 0.3s ease, background 2.0s ease, border 0.3s ease, border-radius 1.3s ease;
+}
+
+* {
+    margin: var(--cero);
+    padding: var(--cero);
+    text-decoration: var(--nose);
+    color: var(--blanco);
+    transition: var(--Multiversal);
+}
+
+html {
+    height: var(--uno-px);
+    filter: grayscale(100%);
+    transition: filter 2.0s;
+
+    &:hover {
+        filter: var(--nose);
+    }
+}
+
+body {
+    background-color: var(--negro);
+    background-size: var(--cien-porsiento);
+    font-family: var(--cursiva);
+    font-size: var(--veinte-px);
+    text-align: var(--centrado);
+
+    &::before {
+        content: "";
+        position: var(--absoluto);
+        inset: var(--cero);
+        background: var(--fondo) no-repeat;
+        background-size: var(--cien-porsiento);
+        opacity: var(--cero-punto-veiticinco);
+        z-index: var(--menos-1);
+    }
+}
+
+.lista {
+    list-style: square;
+    text-align: left;
+    margin: 40px;
+
+    ul {
+        list-style: square;
+
+        li::marker {
+            color: red;
+            font-size: 30px;
+        }
+    }
+}
+
+.lista2 {
+    background: rgba(0, 1, 41, 0.8);
+    list-style: none;
+    margin: 40px;
+    box-shadow: inset 0 0 20px var(--negro);
+
+    li {
+        padding: var(--veinte-px);
+    }
+
+    ul {
+        box-shadow: 0 0 100px rgba(255, 255, 255, 0.3), inset 0 0 20px var(--negro);
+        margin: 50px var(--diezpx);
+        border-radius: var(--veinte-px);
+        padding: var(--veinte-px) var(--cien);
+    }
+}

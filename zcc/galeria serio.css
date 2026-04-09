@@ -1,0 +1,106 @@
+/* Galeria — hoja independiente con el estilo del Index */
+
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --cero: 0;
+    --menos-1: -1;
+    --uno-px: 1px;
+    --cinco-px: 5px;
+    --diezpx: 10px;
+    --veinte-px: 20px;
+    --cien: 100px;
+    --doscientos-px: 200px;
+    --trecientos-px: 300px;
+    --cuatrocientospx: 400px;
+    --nose: none;
+    --centrado: center;
+    --solido: solid;
+    --absoluto: absolute;
+    --cien-porsiento: 100%;
+    --cero-punto-veiticinco: 0.25;
+    --cursiva: "Petit Formal Script", cursive;
+    --fondo: url(/img/18fa54afade665279473c95496ac663b.gif);
+    --Multiversal: height 1.3s ease, 0.3s ease all, opacity 0.3s ease, filter 0.3s ease, background 2.0s ease, border 0.3s ease, border-radius 1.3s ease;
+}
+
+* {
+    margin: var(--cero);
+    padding: var(--cero);
+    text-decoration: var(--nose);
+    color: var(--blanco);
+    transition: var(--Multiversal);
+}
+
+html {
+    height: var(--uno-px);
+    filter: grayscale(100%);
+    transition: filter 2.0s;
+
+    &:hover {
+        filter: var(--nose);
+    }
+}
+
+body {
+    background-color: var(--negro);
+    background-size: var(--cien-porsiento);
+    font-family: var(--cursiva);
+    font-size: var(--veinte-px);
+    text-align: var(--centrado);
+
+    &::before {
+        content: "";
+        position: var(--absoluto);
+        inset: var(--cero);
+        background: var(--fondo) no-repeat;
+        background-size: var(--cien-porsiento);
+        opacity: var(--cero-punto-veiticinco);
+        z-index: var(--menos-1);
+    }
+}
+
+.contenedor {
+    width: 1000px;
+    margin: 50px auto;
+
+    .titulo {
+        padding: var(--veinte-px) var(--doscientos-px);
+    }
+
+    .galeria {
+        a {
+            color: var(--blanco);
+            text-decoration: var(--nose);
+        }
+
+        figure {
+            width: var(--trecientos-px);
+            display: inline-block;
+            margin: var(--diezpx);
+
+            img {
+                width: var(--cien-porsiento);
+                vertical-align: top;
+                border-radius: var(--cinco-px);
+                filter: grayscale(100%);
+                padding: var(--cinco-px);
+                border: var(--uno-px) var(--solido) rgba(255, 255, 255, 0);
+            }
+
+            &:hover img {
+                filter: none;
+                border: var(--uno-px) var(--solido) var(--blanco);
+            }
+
+            figcaption {
+                margin-top: var(--diezpx);
+                color: #ffffff83;
+            }
+
+            &:hover figcaption {
+                color: var(--blanco);
+            }
+        }
+    }
+}

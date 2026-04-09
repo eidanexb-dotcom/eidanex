@@ -1,0 +1,311 @@
+:root {
+    --btamaño: 541px 542px;
+    --bposicion: 252px 305px;
+    --fondi: backgroud;
+    --bfondo: url(/img/cat-meme.gif);
+    --ceroceroquinientos: 0.05125;
+    --animaciondecreditos: colr 0.001s alternate infinite;
+    --cero: 0;
+    --cien: 100px;
+    --nose: none;
+    --menos-1: -1;
+    --uno-px: 1px;
+    --texto: text;
+    --diezpx: 10px;
+    --solido: solid;
+    --repite: repeat;
+    --normal: normal;
+    --veinte-px: 20px;
+    --blanco: white;
+    --dosmilpx: 2000px;
+    --centrado: center;
+    --negro: #000000;
+    --negro: black; 
+    --quinientos: 500px;
+    --blanco: #ffffff;
+    --absoluto: absolute;
+    --relativo: relative;
+    --setentaisinco: 73px;
+    --doscientos-px: 200px;
+    --cien-porsiento: 100%;
+    --no-repetir: no-repeat;
+    --titula-padding: 15px 0;
+    --cero-quinientos: 0.582;
+    --caja-flexible: flexbox;
+    --cuatrocientospx: 400px;
+    --ancho-del-botón: 290px;
+    --tamaño-ortografia: 400;
+    --menos-docientospx: -200px;
+    --dos-segundos: filter 2.0s;
+    --transparente: transparent;
+    --calidadhd: grayscale(100%);
+    --tran-opacidad: opacity 2.0s;
+    --cero-punto-veiticinco: 0.25;
+    --margen-rectangular: 250px 250px;
+    --borde-doble: #ff1e00a6 double;
+    --miniatura-lista: url(/img/lista.png);
+    --borde-del-botón: #00000000 4px solid;
+    --miniatura-galeria: url(/img/galeria.png);
+    --cursiva: "Petit Formal Script", cursive;
+    --filtrox: hue-rotate(200deg) contrast(100);
+    --miniatura-terminos: url(/img/terminos.png);
+    --ciento-cincuenta-porsiento-un-px: 150% 1px;
+    --fondo-linea-roja:var(--fondo) var(--repite);
+    --ortografio-Glitch: "Rubik Glitch", system-ui;
+    --bagroding: linear-gradient(to right, red, blue);
+    --fondo: url(/img/18fa54afade665279473c95496ac663b.gif);
+    --tamaño-de-fondo-de-linea-roja: var(--dosmilpx) var(--uno-px);
+    --posición-de-fondo-de-la-línea-roja: var(--cero) var(--diezpx);
+    --sombra-neon-rojo: 1px 1px 0px #000000, -1px -1px 0px #ad8971;
+    --Multiversal: height 1.3s ease, 0.3s ease all, opacity 0.3s ease, filter 0.3s ease, background 2.0s ease, border 0.3s ease, border-radius 1.3s ease;
+}
+
+/* tera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Fr */
+/* Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera  Frontera */
+
+* {
+    margin: var(--cero);
+    padding: var(--cero);
+    position: var(--nose);
+    font-size: var(--veinte-px);
+    text-align: var(--centrado);
+    text-decoration: var(--nose);
+    transition: var(--Multiversal);
+}
+
+html:has(.credito:active) {
+    filter: var(--filtrox);
+
+}
+
+html {
+    height: var(--uno-px);
+    filter: var(--calidadhd);
+    transition: var(--dos-segundos);
+
+    &:hover {
+        filter: var(--nose);
+    }
+}
+
+body {
+    text-align: var(--centrado);
+    background-color: var(--negro);
+    justify-content: var(--centrado);
+    background-size: var(--cien-porsiento);
+
+    &:has(.credito:active) {
+        &::before {
+            opacity: var(--uno-px);
+            transition: var(--tran-opacidad);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: var(--absoluto);
+        inset: var(--cero);
+        background: var(--fondo) var(--no-repetir);
+        background-size: var(--cien-porsiento);
+        opacity: var(--cero-punto-veiticinco);
+        z-index: var(--menos-1);
+    }
+}
+
+.titulo {
+    color: var(--blanco);
+    transition: var(--nose);
+    font-style: var(--normal);
+    position: var(--relativo);
+    text-align: var(--centrado);
+    font-size: var(--veinte-px);
+    padding: var(--titula-padding);
+    font-weight: var(--tamaño-ortografia);
+    font-family: var(--ortografio-Glitch);
+    background: var(--fondo) var(--no-repetir);
+    background-size: var(--ciento-cincuenta-porsiento-un-px);
+
+    h2 {
+        height: var(--doscientos-px);
+        background: var(--bagroding);
+        -webkit-background-clip: var(--texto);
+        background-clip: var(--texto);
+        -webkit-text-fill-color: var(--transparente);
+    }
+}
+
+.linea-roja {
+    background: var(--fondo-linea-roja);
+    background-size: var(--tamaño-de-fondo-de-linea-roja);
+    background-position: var(--posición-de-fondo-de-la-línea-roja);
+    border: var(--nose);
+    padding: var(--uno-px);
+}
+
+/* fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  */
+/* AVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENCAVESADO  fIN DE ENC*/
+
+/*YA SE USARON ESTAS CLASES  */
+
+.rectangulo {
+    display: flexbox;
+    color: var(--blanco);
+    width: var(--quinientos);
+    height: var(--quinientos);
+    padding: var(--veinte-px);
+    font-style: var(--normal);
+    border: var(--borde-doble);
+    font-family: var(--cursiva);
+    text-align: var(--centrado);
+    text-decoration: var(--nose);
+    border-radius: var(--veinte-px);
+    justify-content: var(--centrado);
+    margin: var(--margen-rectangular);
+    font-weight: var(--tamaño-ortografia);
+
+    &.recalo {
+        margin: var(--diezpx) var(--diezpx);
+    }
+
+    .boto-galeria:hover {
+        color: var(--blanco);
+        background: var(--miniatura-galeria);
+        background-size: var(--cuatrocientospx);
+        background-position: var(--cero) var(--doscientos-px);
+    }
+
+    .boto-lista:hover {
+        color: var(--blanco);
+        background: var(--miniatura-lista);
+        background-size: var(--cuatrocientospx);
+        background-position: var(--cero) var(--doscientos-px);
+    }
+
+    .boto-terminos:hover {
+        color: var(--blanco);
+        background: url(/img/terminos.png);
+        background-size: var(--cuatrocientospx);
+        background-position: var(--cero) var(--doscientos-px);
+    }
+
+    a {
+        :hover {
+            width: var(--cuatrocientospx);
+        }
+    }
+
+    button {
+        color: var(--blanco);
+        outline: var(--nose);
+        margin: var(--veinte-px);
+        font-style: var(--normal);
+        font-family: var(--cursiva);
+        width: var(--ancho-del-botón);
+        border: var(--borde-del-botón);
+        border-radius:var(--veinte-px);
+        box-shadow: var(--sombra-neon-rojo);
+        padding: var(--veinte-px) var(--cien);
+        font-weight: var(--tamaño-ortografia);
+        background: rgba(var(--cero), var(--cero), var(--cero), var(--cero-quinientos));
+    }
+
+    &:hover {
+        filter: var(--nose);
+
+        button {
+            color: var(--negro);
+            height: var(--setentaisinco);
+            background-color: var(--blanco);
+            padding: var(--veinte-px) var(--cien);
+            border: rgb(var(--cero), var(--cero), var(--cero)) var(--uno-px) var(--solido);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: var(--absoluto);
+        inset: var(--cero);
+        background: var(--bfondo) var(--no-repetir);
+        background-size: var(--btamaño);
+        background-position: var(--bposicion);
+        border-radius: var(--fondi) var(--veinte-px);
+        opacity: var(--ceroceroquinientos);
+        z-index: var(--menos-1);
+        transition: all 2.0s;
+    }
+
+    .credito {
+        margin: var(--cien) var(--cero);
+    }
+}
+
+.rectangulo:has(.boto-galeria:hover)::before {
+    background: var(--miniatura-galeria) var(--no-repetir);
+    background-size: 1041px ;
+    background-position: 852px 305px;
+    opacity: var(--cien-porsiento);
+
+}
+.rectangulo:has(.boto-terminos:hover)::before {
+    background: var(--miniatura-terminos) var(--no-repetir);
+    background-size: 1041px ;
+    background-position: 852px 305px;
+    opacity: var(--cien-porsiento);
+
+}
+.rectangulo:has(.boto-lista:hover)::before {
+    background: var(--miniatura-lista) var(--no-repetir);
+    background-size: 1041px ;
+    background-position: 852px 305px;
+    opacity: var(--cien-porsiento);
+
+}
+
+
+.credito:hover {
+    animation: var(--animaciondecreditos);
+}
+
+
+
+/* Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada */
+/* na no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de zona no autorisada  Inicio de  */
+
+@keyframes dlll {
+    0% {
+        background-position: 999999px 999999999999999px;
+    }
+}
+
+@keyframes colr {
+    0% {
+        background-color: var(--negro);
+        border-radius: 100% 0% 100% 0%;
+        color: #44ff44;
+        box-shadow: var(--cero) var(--cero) 10px #44ff44;
+    }
+
+    25% {
+        border-radius: 0% 100% 0% 100%;
+        background-color: var(--negro);
+        color: aqua;
+    }
+
+    50% {
+        border-radius: 100% 0% 100% 0%;
+        background-color: var(--negro);
+        color: red;
+    }
+
+    75% {
+        border-radius: 0% 100% 0% 100%;
+        background-color: var(--negro);
+        color: rgb(255, var(--cero), 200);
+    }
+
+    100% {
+        border-radius: 100% 0% 100% 0%;
+        background-color: var(--negro);
+        color: #87ceeb;
+    }
+}
